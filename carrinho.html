@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/mrktlogo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+<!--- Carrinho --->    
+    <div class="small-container">
+        <h2 class="title">Carrinho</h2>
+    </div>
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/sport-shirt.jpg" alt="">
+                        <div>
+                            <p>Camiseta Esportiva</p>
+                            <small>Preço: R$ 200,00</small>
+                            <br>
+                            <a href="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$ 200,00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/sport-pants.jpg" alt="">
+                        <div>
+                            <p>Calça Esportiva</p>
+                            <small>Preço: R$ 200,00</small>
+                            <br>
+                            <a href="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$ 200,00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/polo-shirt.jpg" alt="">
+                        <div>
+                            <p>Camiseta Polo</p>
+                            <small>Preço: R$ 300,00</small>
+                            <br>
+                            <a href="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$ 300,00</td>
+            </tr>
+        </table>
+
+        <div class="valor-total">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>R$ 700,00</td>
+                </tr>
+                <tr>
+                    <td>Frete</td>
+                    <td>R$ 25,00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>R$ 725,00</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+<!--- Footer --->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Baixe Nosso App!</h3>
+                <p>Android/iOS</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/store"><img src="images/play-store.png"></a>
+                    <a href="https://www.apple.com/br/app-store/"><img src="images/app-store.png"></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/mrktlogo.png">
+            </div>
+            <div class="footer-col-3">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li>Cupoms</li>
+                    <li>Termos de Uso</li>
+                    <li>Perguntas Frequentes</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com"><img src="images/facelogo.png"></a>Facebook</li>
+                    <li><a href="https://www.instagram.com/"><img src="images/instalogo.png"></a>Instagram</li>
+                    <li><a href="https://www.youtube.com/"><img src="images/tubelogo.png"></a>Youtube</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--- menutoggle --->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "300px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+</html>
